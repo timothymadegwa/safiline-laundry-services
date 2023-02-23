@@ -695,6 +695,27 @@ section {
 }
 
 /*--------------------------------------------------------------
+# booking
+--------------------------------------------------------------*/
+
+#booking {
+  display: block;
+  position: fixed;
+  top: 45%;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #106eea;;
+  color: white;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+}
+
+/*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
 .featured-services .icon-box {
