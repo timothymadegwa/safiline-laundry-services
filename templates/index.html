@@ -91,34 +91,35 @@
           <div class="modal-body">
             <form action="#" method="post" autocomplete="off">
               <div class="form-floating mb-3 mx-3">
-                <select class="form-select rounded-pill" aria-label="Default select example" name="overall", placeholder="Location" required>
-                    <option value="5"> I love the app</option>
-                    <option value="4"> It is a good app</option>
-                    <option value="3">The app is okay</option>
-                    <option value="2">The app could be better</option>
-                    <option value="1">I dont like the app</option>
-                  </select>
-                <label for="overall">Overall feeling</label>
+                <input type="text" class="form-control rounded-pill" id="name" name="name" placeholder="Full name" required>
+                <label for="name">Full Name</label>
               </div>
               <div class="form-floating mb-3 mx-3">
-                <select class="form-select rounded-pill" aria-label="Default select example" name="ease_of_use", placeholder="Location" required>
-                    <option value="5">The app is very easy to use</option>
-                    <option value="4">It is easy to use</option>
-                    <option value="3">The app is okay</option>
-                    <option value="2">The app is difficult to use</option>
-                    <option value="1">The app is very difficult to use</option>
-                  </select>
-                <label for="ease">Ease of use</label>
+                <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="Email Address" required>
+                <label for="email">Email Address</label>
               </div>
-              
+              <div class="form-floating mb-3 mx-3">
+                <input type="tel" class="form-control rounded-pill" id="phone" name="phone" placeholder="Phone Number" required>
+                <label for="phone">Phone Number</label>
+              </div>
+              <div class="form-floating mb-3 mx-3">
+                <input type="date" class="form-control rounded-pill" id="pickup-date" name="pickup-date" placeholder="Pickup Date" required>
+                <label for="pickup-date">Pickup Date</label>
+              </div>
+              <div class="form-floating mb-3 mx-3">
+                <input type="date" class="form-control rounded-pill" id="delivery-date" name="delivery-date" placeholder="Delivery Date" required>
+                <label for="delivery-date">Delivery Date</label>
+              </div>
               <div class="mb-3 mx-3">
-                <label for="range_weight" class="form-label">Love the $-BOB Application?<br>Give us a rating<br></label>
-                <input type="range" name="rating" id="range_weight" value="5" min="1" max="10" required oninput="range_weight_disp.value = range_weight.value">
-                <strong class="mx-2"><output  id="range_weight_disp"></output></strong>
-              </div><hr>
+                <label for="feedback" class="form-label">Residence </label>
+                <textarea class="form-control" name="feedback" rows="3" required></textarea>
+              </div>
               <div class="mb-3 mx-3">
-                <p>Help us understand your rating of the $-BOB application by telling us more.</p>
-                <label for="feedback" class="form-label">Additional Feedback <i>(Optional)</i></label>
+                <label for="feedback" class="form-label">Garment Care instructions <i>(If any)</i></label>
+                <textarea class="form-control" name="feedback" rows="3"></textarea>
+              </div>
+              <div class="mb-3 mx-3">
+                <label for="feedback" class="form-label">Delivery Instructions <i>(If any)</i></label>
                 <textarea class="form-control" name="feedback" rows="3"></textarea>
               </div>
               <div class="text-center">
