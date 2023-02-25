@@ -41,10 +41,13 @@ def home():
         Delivery Instructions -> {delivery}.
         Thank you!
         """
-        msg = Message(subject="Hello", sender=email_sender, recipients=["timothymadegwa@gmail.com"])
+        msg = Message(subject="BOOKING ON THE SAFILINE WEBSITE!", sender=email_sender, recipients=["timothymadegwa@gmail.com"])
         msg.body = email_message
-        mail.send(msg)
-        return "sent"
+        try:
+            mail.send(msg)
+            return render_template('success.html')
+        except:
+            return render_template('fail.html')
 
     return render_template('index.html')
 
