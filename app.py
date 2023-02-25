@@ -19,8 +19,30 @@ mail = Mail(app)
 @app.route('/', methods=["GET", "POST"])
 def home():
     if request.method == "POST":
+        name = request.form['name']
+        email = request.form['email']
+        phone = request.form['phone']
+        pickup_date = request.form['pickup-date']
+        delivery_date = request.form['delivery-date']
+        residence = request.form['residence']
+        try:
+            care = request.form['care']
+        except:
+            care = "NONE"
+        try:
+            delivery = request.form['delivery']
+        except:
+            delivery = "NONE"
+        
+        email_message = f"""Hello, there has been a booking on the Safiline Website by {name} with the email address {email} and phone number {phone}.
+        Pickup date is {pickup_date} and the delivery date is {delivery_date}. 
+        The client's residence is {residence}.
+        Care Instructions -> {care}
+        Delivery Instructions -> {delivery}.
+        Thank you!
+        """
         msg = Message(subject="Hello", sender=email_sender, recipients=["timothymadegwa@gmail.com"])
-        msg.body = "Test Email"
+        msg.body = email_message
         mail.send(msg)
         return "sent"
 
