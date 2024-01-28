@@ -715,6 +715,23 @@ section {
   border-radius: 4px;
 }
 
+#whatsapp {
+  display: block;
+  position: fixed;
+  top: 25%;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #106eea;;
+  color: white;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+}
+
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
