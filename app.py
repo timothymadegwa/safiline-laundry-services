@@ -41,7 +41,7 @@ def home():
         Delivery Instructions -> {delivery}.
         Thank you!
         """
-        msg = Message(subject="BOOKING ON THE SAFILINE WEBSITE!", sender=email_sender, recipients=["timothymadegwa@gmail.com"])
+        msg = Message(subject="BOOKING ON THE SAFILINE WEBSITE!", sender=email_sender, recipients=["info@silvercleaningservices.com"])
         msg.body = email_message
         try:
             mail.send(msg)
